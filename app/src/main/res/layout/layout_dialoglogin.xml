@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:layoutDirection="ltr"
+android:background="@color/colorDeepSkyBlue">
+
+<EditText
+    android:id="@+id/edit_empid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="מספר עובד" />
+
+
+
+</RelativeLayout>
+
+    <!--
+<EditText
+android:id="@+id/edit_password"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/edit_empid"
+android:layout_alignParentStart="true"
+android:hint="סיסמא"
+android:inputType="textPassword"
+android:textAlignment="textEnd" />
+    endregion-->

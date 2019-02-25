@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="285dp"
+    android:id="@+id/table1"
+    tools:context="com.cloud.marom.safetytours.MainActivity">
+    <!-- DATE/TIME -->
+    <TableRow
+        android:background="@color/colorAccent"
+        android:padding="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="תאריך:"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="date"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="time"
+            android:textColor="@android:color/white" />
+
+    </TableRow>
+    <!-- PERFORM/DUTY -->
+    <TableRow
+        android:background="@color/colorModerateLimeGreen"
+        android:padding="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="@string/mevazea"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtMEVAZEA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="מבצע"
+            android:textColor="@android:color/white" />
+
+
+
+        <TextView
+            android:id="@+id/txtDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="duty"
+            android:textColor="@android:color/white" />
+    </TableRow>
+    <!-- SPINNERS -->
+    <TableRow android:background="@color/colorDeepSkyBlue">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="רציף"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseRazif"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="שם מנע"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseMena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="שם אוניה"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseShip"
+            android:layout_width="0dp"
+
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="סוג מטען"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseMITAN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue" >
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:text="ממצאים"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseMIMZAIM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="המלצות ראשוניות"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseHAMLAZOT"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+    <TableRow android:background="@color/colorDeepSkyBlue" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:text="אחראי משימה"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/chooseACHRAI"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+</TableLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text=" אחר"
+        android:textStyle="bold"
+        android:textSize="14dp"
+
+        android:layout_below="@id/table1"/>
+
+    <!-- REMARK -->
+    <EditText
+        android:id="@+id/txtRemark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt1"
+        android:minLines="2"
+        android:singleLine="false"
+        android:textSize="15dp" />
+    <!-- PICTURE -->
+    <Button
+        android:id="@+id/btnPic"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtRemark"
+        android:onClick="onClick_btnPic"
+        android:text="צלם" />
+
+    <ImageView
+        android:id="@+id/ImageEvent"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/txtRemark"
+        android:layout_alignParentStart="true"
+        android:background="@color/hint_text"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/ImageEvent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blue_onclickred"
+        android:onClick="onClick_btnConfirm"
+        android:text="אישור ושליחת הטופס" />
+
+    <TextView
+        android:id="@+id/txtSign"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/ImageEvent"
+        android:layout_marginStart="280dp"
+        android:background="@color/colorDeepSkyBlue"
+        android:text="על החתום: "/>
+
+</RelativeLayout>

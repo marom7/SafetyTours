@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">דיווח סיור בטיחות</string>
+    <string name="shotcut">סיור בטיחות</string>
+    <string name="mevazea"> שם מבצע:</string>
+    <string-array name="RAZIFIM">
+        <item>רציף 1</item>
+        <item>רציף 7</item>
+        <item>רציף 9</item>
+        <item>רציף 21</item>
+        <item>רציף 25</item>
+        <item>רציף 24</item>
+        <item>רציף 27</item>
+    </string-array>
+    <string name="razifPrompt">בחר רציף</string>
+
+    <string-array name="MENA">
+        <item> יורם סוויסה</item>
+        <item> חזן שוני</item>
+        <item> אורי הרוש </item>
+        <item> אריק אסולין</item>
+        <item> דודו אפריאט</item>
+        <item>לוי אילן </item>
+    </string-array>
+    <string name="menaPrompt">בחר רציף</string>
+    <string name="remark">הערה</string>
+</resources>
