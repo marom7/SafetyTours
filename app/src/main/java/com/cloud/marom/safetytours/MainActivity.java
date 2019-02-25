@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.Html;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -128,7 +129,9 @@ public class MainActivity extends AppCompatActivity implements empDialogLogin.Ex
         {
 
         }
-       //  todo: Send Mail to JAKLIN.
+
+        // ToDo : SendMail(String To , String Subject, String [Html]Body) (To Jaklin)
+
         //Toast.makeText(this, "Tour send successful", Toast.LENGTH_LONG).show();
 
     }
